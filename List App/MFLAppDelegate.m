@@ -7,13 +7,49 @@
 //
 
 #import "MFLAppDelegate.h"
+#import "MFLTableTableViewController.h"
+
 
 @implementation MFLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
+    
+    
+    MFLTableTableViewController * tableVC = [[MFLTableTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    self.window.rootViewController = tableVC;
+    
+   /* NSString * string = @"hi";
+    
+    NSLog(@"%@",string);
+    
+    NSString * hello = string;
+    
+    NSLog(@"%@",hello);
+    
+    string = @"goodbye";
+    
+    NSLog(@"string = %@", string);
+    NSLog(@"hello = %@", hello);
+    
+    UIView * box1 = [[UIView alloc] init];
+    
+    UIView * box2 = box1;
+    
+    box1 = [[UIView alloc] init];
+    
+    NSLog(@"box1 = %@",box1);
+    NSLog(@"box2 = %@",box2);
+    
+    NSLog(@"box1 = %@",box1);
+    NSLog(@"box2 = %@",box2); */
+    
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
