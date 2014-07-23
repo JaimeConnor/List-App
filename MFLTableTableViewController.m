@@ -71,6 +71,8 @@
     
     cell.textLabel.text = listItem;
     
+    cell.backgroundColor = [UIColor greenColor];
+    
     // Configure the cell...
     
     return cell;
